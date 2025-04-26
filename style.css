@@ -2,22 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', 'Roboto', 'Arial', sans-serif;
+  font-family: "Poppins", "Roboto", "Arial", sans-serif;
   scroll-behavior: smooth;
 }
 
 :root {
-  --root-background: #0d0d0d;       /* Very dark black */
-  --button-background: #1a1a1a;     /* Slightly lighter black */
-  --div-background: #1f1f1f;        /* Dark grey for cards and divs */
-  --section-background: #141414;    /* Background for larger sections */
-  --heading-color: #ffffff;          /* Pure white for headings */
-  --text-color: #cccccc;             /* Light grey for regular text */
-  --button-text-color: #ffffff;      /* White for buttons */
-  --action-color: #e0e0e0;           /* Light grey for hover effects, underlines, etc */
-  --nav-item-color: #b3b3b3;         /* Grey for nav items */
-  --icon-color: #d9d9d9;             /* Soft white for icons */
-  --skill-text-color: #f2f2f2;       /* Very light grey for skills area */
+  --root-background: #0d0d0d; /* Very dark black */
+  --button-background: #1a1a1a; /* Slightly lighter black */
+  --div-background: #1f1f1f; /* Dark grey for cards and divs */
+  --section-background: #141414; /* Background for larger sections */
+  --heading-color: #ffffff; /* Pure white for headings */
+  --text-color: #cccccc; /* Light grey for regular text */
+  --button-text-color: #ffffff; /* White for buttons */
+  --action-color: #e0e0e0; /* Light grey for hover effects, underlines, etc */
+  --nav-item-color: #b3b3b3; /* Grey for nav items */
+  --icon-color: #d9d9d9; /* Soft white for icons */
+  --skill-text-color: #f2f2f2; /* Very light grey for skills area */
   --root-background: #0d0d0d;
   --header-background: #141414;
   --skills-background: #1a1a1a;
@@ -28,119 +28,190 @@
   --footer-background: #0d0d0d;
   --logo-color: #ffffff;
 
-  --pop-up: -8px -8px 15px rgba(255, 255, 255, 0.05), 8px 8px 15px rgba(0, 0, 0, 0.9);
-  --pop-down: inset 8px 8px 15px rgba(0, 0, 0, 0.9), inset -8px -8px 15px rgba(255, 255, 255, 0.05);
+  --pop-up: -8px -8px 15px rgba(255, 255, 255, 0.05),
+    8px 8px 15px rgba(0, 0, 0, 0.9);
+  --pop-down: inset 8px 8px 15px rgba(0, 0, 0, 0.9),
+    inset -8px -8px 15px rgba(255, 255, 255, 0.05);
 }
 
-body{
-    background-color: var(--root-background);
+body {
+  background-color: var(--root-background);
 }
 
-section{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-section .nav{
-    width: 98%;
-    height: 75px;
-    background-color: var(--header-background);
-    margin-top: 10px;
-    border-radius: 25px;
-    box-shadow: var(--pop-down)
+section .nav {
+  width: 98%;
+  height: 75px;
+  background-color: var(--header-background);
+  margin-top: 10px;
+  border-radius: 25px;
+  box-shadow: var(--pop-down);
 }
 
-section .nav nav{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 50px
+section .nav nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
 }
 
-section .nav nav header{
-    color: var(--logo-color);
-    font-size: 2rem;
+section .nav nav header {
+  color: var(--logo-color);
+  font-size: 2rem;
 }
 
-section .nav nav main ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
+section .nav nav main ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
 }
 
-section .nav nav main ul li{
-    padding: 5px 20px;
-    border-radius: 20px;
-    margin-right: 50px;
-    box-shadow: var(--pop-up)
+section .nav nav main ul li {
+  padding: 5px 20px;
+  border-radius: 20px;
+  margin-right: 50px;
+  box-shadow: var(--pop-up);
 }
 
-section .nav nav main ul li a{
-    text-decoration: none;
-    color: var(--text-color);
-    transition: .35s  ease-in-out;
+section .nav nav main ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: 0.35s ease-in-out;
 }
 
-section .nav nav main ul li a:hover{
-    cursor: pointer;
-    color: gold;
+section .nav nav main ul li a:hover {
+  cursor: pointer;
+  color: gold;
 }
 
-section .main{
-    width: 98%;
-    height: 100%;
-    margin-top: 10px;
-    border-radius: 25px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px
+section .main {
+  width: 98%;
+  height: 100%;
+  margin-top: 10px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-section .main .left{
-    width: 73%;
-    height: 100%;
-    border-radius: 25px;
-    box-shadow: var(--pop-up);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+section .main .left {
+  width: 73%;
+  height: 100%;
+  border-radius: 25px;
+  box-shadow: var(--pop-up);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 section .main .left .top {
-    width: 100%;
-    height: 60%;
-    box-shadow: var(--pop-down);
-    border-radius: 18px;
+  width: 100%;
+  height: 50%;
+  box-shadow: var(--pop-down);
+  border-radius: 18px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
-section .main .left .bottom{
-    width: 100%;
-    height: 37%;
-    box-shadow: var(--pop-down);
-    border-radius: 18px;
+section .main .left .top .skills {
+  width: 75%;
+  height: 100%;
+  border-radius: 13px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+   justify-content: space-around;
+   gap: 40px;
 }
 
-
-
-
-
-section .main .right{
-    width: 25%;
-    height: 100%;
-    border-radius: 25px;
+section .main .left .top .skills .holder{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     box-shadow: var(--pop-up);
+    border-radius: 10px;
+    
 }
 
+section .main .left .top .skills .holder i{
+    color: var(--icon-color);
+    font-size: 3rem;
+}
+
+section .main .left .top .skills .holder p{
+    color: var(--text-color);
+}
+
+section .main .left .top .photo {
+  width: 24%;
+  height: 100%;
+  box-shadow: var(--pop-down);
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+section .main .left .top .photo img{
+    width: 100%;
+    transition: .75s ease-in-out;
+}
+
+section .main .left .top .photo img:hover{
+    width: 101%;
+}
+
+section .main .left .bottom {
+  width: 100%;
+  height: 47%;
+  box-shadow: var(--pop-down);
+  border-radius: 18px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .main .left .bottom .about{
+    width: 60%;
+    height: 100%;
+    box-shadow: var(--pop-up);
+    border-radius: 18px;
+}
+
+section .main .left .bottom .contact{
+    width: 38%;
+    height: 100%;
+    box-shadow: var(--pop-up);
+    border-radius: 18px;
+}
+
+section .main .right {
+  width: 25%;
+  height: 100%;
+  border-radius: 25px;
+  box-shadow: var(--pop-up);
+}
