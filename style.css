@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Roboto', 'Arial', sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --root-background: #0d0d0d;       /* Very dark black */
+  --button-background: #1a1a1a;     /* Slightly lighter black */
+  --div-background: #1f1f1f;        /* Dark grey for cards and divs */
+  --section-background: #141414;    /* Background for larger sections */
+  --heading-color: #ffffff;          /* Pure white for headings */
+  --text-color: #cccccc;             /* Light grey for regular text */
+  --button-text-color: #ffffff;      /* White for buttons */
+  --action-color: #e0e0e0;           /* Light grey for hover effects, underlines, etc */
+  --nav-item-color: #b3b3b3;         /* Grey for nav items */
+  --icon-color: #d9d9d9;             /* Soft white for icons */
+  --skill-text-color: #f2f2f2;       /* Very light grey for skills area */
+}
